@@ -1,6 +1,5 @@
 class Solution {
     public int solution(int n) {
-        int pizza = n%7>0 ? n/7+1 : n/7;
-        return pizza;
+        return n%7>0 ? n/7+1 : n/7;
     }
 }

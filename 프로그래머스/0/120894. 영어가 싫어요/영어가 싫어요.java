@@ -2,7 +2,8 @@ import java.util.*;
 
 class Solution {
     public long solution(String numbers) {
-        List<String> list = new ArrayList<>(Arrays.asList("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"));
+        List<String> list = new ArrayList<>(
+            Arrays.asList("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"));
         String temp = "";
         long answer = 0;
         for(char c : numbers.toCharArray()) {

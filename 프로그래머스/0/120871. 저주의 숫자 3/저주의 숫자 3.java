@@ -1,10 +1,10 @@
 class Solution {
     public int solution(int n) {
-        int answer = 0;
-        int cnt = 0;
-        while(cnt<n) {
-            if(i%3==0 && i%10%3==0 && i%100/10%3==0 && i/100%3==0) answer++;
-            answer++;
+        int answer = 1;
+        for(int i=1; i<=n; i++) {
+            while(answer%3==0 || (answer%10)==3 || (answer>=10 && answer/10%10==3)) answer++;
+            if(i!=n) answer++;
         }
+        return answer;
     }
 }

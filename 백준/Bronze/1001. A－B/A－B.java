@@ -6,5 +6,6 @@ public class Main {
         String[] s = sc.nextLine().split(" ");
         int answer = Integer.parseInt(s[0])-Integer.parseInt(s[1]);
         System.out.println(answer);
+        sc.close();
     }
 }
